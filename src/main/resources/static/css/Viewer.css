@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+body, html {
+    height: 100%;
+}
+
+/*navbar css*/
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background: #000;
+    z-index: 100;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+    position: fixed;
+    overflow: hidden;
+}
+
+#navbar_logo img {
+    height: 50%;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.navbar_menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu_item {
+    height: 40px;
+
+}
+
+.menu_link {
+    color: #fff;
+    text-decoration: none;
+    height: 100%;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.menu_link:hover {
+    font-weight: bold;
+}
+
+.button {
+    padding: 10px 20px;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+}
+
+/*hero css*/
+.hero {
+    background-color: #141414;
+}
+
+.hero_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/pexels-mikhail-nilov-9242270.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero_text {
+    color: #fff;
+}
+
+.hero_text h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero_text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*computers section css*/
+.computers {
+    padding: 50px 50px;
+    display: flex;
+}
+
+.computer_cards {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.card_thumb {
+    height: 300px;
+    width: auto;
+    margin-right: 40px;
+}
+
+.card_link {
+    text-decoration: none;
+    color: #000;
+}
+
+.cart_button {
+    color: #fff !important; /* White text */
+    border: none;
+    outline: 0;
+    background: #000 !important; /* Black background */
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+}

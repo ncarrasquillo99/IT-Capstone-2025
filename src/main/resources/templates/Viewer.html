@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Viewer.css">
+    <title>Orlando Computers - Home</title>
+</head>
+
+<body>
+<header>
+    <!--navigation bar-->
+    <nav class = "navbar">
+        <div class = "navbar_container">
+            <a href = "Viewer" id = "navbar_logo"><img src = "/images/logo 1.png" alt=""></a>
+            <ul class = "navbar_menu">
+                <li class = "menu_item">
+                    <a href = "Product" class = "menu_link">Products</a>
+                </li>
+                <li class = "menu_item">
+                    <a href = "Services" class = "menu_link">Services</a>
+                </li>
+                <li class = "menu_item">
+                    <a href = "contact" class = "menu_link">Contact Us</a>
+                </li>
+                <li class = "menu_item">
+                    <a href = "Map" class = "menu_link">Map</a>
+                </li>
+                <li class = "button">
+                    <a href="cart" class="cart_link">
+                        Cart <span class="cart_count">0</span>
+                    </a>
+                </li>
+                <p class ="cart_count">0</p>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <!--hero section-->
+    <section class = "hero">
+        <div class = "hero_container">
+            <div class = "hero_text">
+                <h1>Welcome to Orlando Computers</h1>
+                <p>Orlando's #1 spot for your computer needs</p>
+            </div>
+        </div>
+    </section>
+    <!--computers section-->
+    <section class = "computers">
+        <div class = "computers_container">
+            <div class = "computers_title">
+                <h1>Computers</h1>
+            </div>
+            <ul class = "product_cards">
+                <li class = "product_card">
+                    <img src = "/images/desktop-optiplex-7020-mt-black-gallery-1.avif" alt = "Dell Optiplex 7020 MT" class = "card_thumb">
+                    <div class = "card_text">
+                        <h1>Dell Optiplex 7020</h1>
+                        <p class = "price">$849.00</p>
+                        <button class = "cart_button">
+                            <p>Add to cart</p>
+                        </button>
+                    </div>
+                </li>
+                <li class = "product_card">
+                    <img src = "/images/ov9xnbyz045tnpwhltr3878eqt1qu9465863.avif" alt = "Lenovo ThinkPad L16" class = "card_thumb">
+                    <div class = "card_text">
+                        <h1>Lenovo ThinkPad L16</h1>
+                        <p class = "price">$649.00</p>
+                        <button class = "cart_button">
+                            <p>Add to cart</p>
+                        </button>
+                    </div>
+                </li>
+                <li class = "product_card">
+                    <img src = "/images/pavilion.avif" alt = "HP Pavilion TP01-3055xt" class = "card_thumb">
+                    <div class = "card_text">
+                        <h1>HP Pavilion TP01-3055xt</h1>
+                        <p class = "price">$799.00</p>
+                        <button class = "cart_button">
+                            <p>Add to cart</p>
+                        </button>
+                    </div>
+                </li>
+                <li class = "product_card">
+                    <img src = "/images/refurb-imac-24-touch-id-blue-202402.jpg" alt = "Apple iMac 24" class = "card_thumb">
+                    <div class = "card_text">
+                        <h1>Apple iMac 24</h1>
+                        <p class = "price">$1,299.00</p>
+                    </div>
+                    <button class = "cart_button">
+                        <p>Add to cart</p>
+                    </button>
+                </li>
+                <li class = "product_card">
+                    <img src = "/images/71X8s4RCBVL._AC_SX679_.jpg" alt = "MSI Aegis Z2" class = "card_thumb">
+                    <div class = "card_text">
+                        <h1>MSI Aegis Z2</h1>
+                        <p class = "price">$1,249.00</p>
+                    </div>
+                    <button class = "cart_button">
+                        <p>Add to cart</p>
+                    </button>
+                </li>
+                <li class = "product_card">
+                    <img src = "/images/shopping.jpg" alt = "Samsung Galaxy Book4 Edge" class = "card_thumb">
+                    <div class = "card_text">
+                        <h1>Samsung Galaxy Book4 Edge</h1>
+                        <p class = "price">$782.86</p>
+                    </div>
+                    <button class = "cart_button">
+                        <p>Add to cart</p>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <section class="mailing_list">
+            <h1>Want updates from us?</h1>
+            <p>Sign up for our mailing list and get notifications for new stock, sales, and in-store events.</p>
+
+            <form action="/subscribe" method="POST">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phoneNumber" placeholder="Enter your phone number" required>
+
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <!--sell/footer section-->
+        <section class = "sell_banner"></section>
+</main>
+<script src="/Js/AddCartJs.js" defer></script>
+</body>
+</html>
