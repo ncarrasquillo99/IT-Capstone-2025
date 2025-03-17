@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="/css/Cart.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">Orlando Computers</div>
+    <div class="nav-icons">
+      <div class="nav-icon">🔍</div>
+      <div class="nav-icon">❤️</div>
+      <div class="nav-icon">👤</div>
+    </div>
+  </header>
+
+  <h1>Your Shopping Cart</h1>
+
+  <div class="cart-container">
+    <div class="cart-header">
+      <div>Product</div>
+      <div>Quantity</div>
+      <div>Price</div>
+      <div>Subtotal</div>
+    </div>
+
+    <div class="empty-cart">
+      <div class="empty-cart-icon">🛒</div>
+      <h3>Your cart is empty</h3>
+      <p>Looks like you haven't added anything to your cart yet.</p>
+      <button class="shop-now-btn">Shop Now</button>
+    </div>
+
+    <!-- Cart items will be dynamically added here when products are added from the home page -->
+  </div>
+
+  <div class="cart-summary empty">
+    <h2>Order Summary</h2>
+    <div class="summary-row">
+      <div>Subtotal</div>
+      <div>$0.00</div>
+    </div>
+    <div class="summary-row">
+      <div>Shipping</div>
+      <div>-</div>
+    </div>
+    <div class="summary-row">
+      <div>Tax</div>
+      <div>$0.00</div>
+    </div>
+    <div class="summary-row total">
+      <div>Total</div>
+      <div>$0.00</div>
+    </div>
+    <button class="checkout-btn" disabled>Proceed to Checkout</button>
+    <div class="continue-shopping">
+      <a href="#">Continue Shopping</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
