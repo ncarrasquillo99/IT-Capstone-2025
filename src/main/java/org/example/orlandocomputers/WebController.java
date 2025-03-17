@@ -32,6 +32,12 @@ public class WebController {
         return "Viewer";
     }
 
+    @GetMapping("/Cart")
+    public String cart() {
+        return "Cart";
+
+    }
+
     @PostMapping("/subscribe")
     public String subscribe(Subscriber subscriber, Model model) {
         subscriberRepository.save(subscriber); // Save the subscriber to MySQL DB
