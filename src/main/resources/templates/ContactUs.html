@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/ContactUs.css">
+    <title>Orlando Computers - Contact Us</title>
+</head>
+
+<body>
+<header>
+    <!--navigation bar-->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="Viewer" id="navbar_logo"><img src="/images/logo 1.png" alt="Orlando Computers"></a>
+            <ul class="navbar_menu">
+                <li class="menu_item">
+                    <a href="Product" class="menu_link">Products</a>
+                </li>
+                <li class="menu_item">
+                    <a href="Services" class="menu_link">Services</a>
+                </li>
+                <li class="menu_item">
+                    <a href="ContactUs" class="menu_link">Contact Us</a>
+                </li>
+                <li class="menu_item">
+                    <a href="Map" class="menu_link">Map</a>
+                </li>
+                <li class="button">
+                    <a href="Cart" class="cart_link">
+                        Cart <span class="cart_count">0</span>
+                    </a>
+                </li>
+                <p class="cart_count">0</p>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <!--hero section-->
+    <section class="hero">
+        <div class="hero_container">
+            <div class="hero_text">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you! Reach out with any questions or inquiries.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact form section-->
+    <section class="contact_section">
+        <div class="contact_container">
+            <div class="contact_title">
+                <h1>Get in Touch</h1>
+                <p>If you have any questions or need assistance, please feel free to reach out. We will get back to you as soon as possible!</p>
+            </div>
+            <form action="/submitContact" method="POST" class="contact_form">
+                <div class="form_field">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form_field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form_field">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Write your message here" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="submit_button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!--Location section-->
+    <section class="location_section">
+        <h1>Our Location</h1>
+        <p>Visit us at our store or reach out through the contact form above!</p>
+        <div id="map"></div> <!-- You can embed a Google Map here -->
+    </section>
+
+    <!--footer section-->
+    <section class="sell_banner"></section>
+</main>
+
+<script src="/Js/AddCartJs.js" defer></script>
+</body>
+</html>

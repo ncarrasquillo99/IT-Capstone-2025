@@ -38,6 +38,12 @@ public class WebController {
 
     }
 
+    @GetMapping("/ContactUs")
+    public String contactus() {
+        return "ContactUs";
+
+    }
+
     @PostMapping("/subscribe")
     public String subscribe(Subscriber subscriber, Model model) {
         subscriberRepository.save(subscriber); // Save the subscriber to MySQL DB
